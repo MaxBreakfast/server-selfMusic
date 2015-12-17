@@ -20,7 +20,6 @@ var RoomSchema = new Schema({
   users: [{
     type: Schema.Types.ObjectId,
     ref: "User",
-    unique: true
   }]
 });
 

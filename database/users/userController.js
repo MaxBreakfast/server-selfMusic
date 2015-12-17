@@ -1,4 +1,4 @@
-var User = require('./userModel');
+var User = require('./userModel.js');
 
 module.exports = {
   findAllUsers: function(req, res) {

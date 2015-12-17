@@ -2,7 +2,10 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var RoomSchema = new Schema({
-  id: String,
+  id: {
+    type: String,
+    unique: true
+  },
   Name: String,
   creator: {
     type: Schema.Types.ObjectId,
